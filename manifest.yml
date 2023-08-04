@@ -1,12 +1,10 @@
 ---
-name: RStudio Server
+name: Hail
 category: Interactive Apps
 subcategory: Servers
 role: batch_connect
 description: |
-  This app will launch [RStudio Server] an IDE for [R]
+  This app will launch [Hail] on [Jupyter]
 
-  [RStudio Server]: https://www.rstudio.com/products/rstudio-server/
-  [R]: https://www.r-project.org/
-  [Owens]: https://www.osc.edu/resources/technical_support/supercomputers/owens
-  [Pitzer]: https://www.osc.edu/resources/technical_support/supercomputers/pitzer
+  [Hail]: https://www.hail.is
+  [Jupyter]: https://jupyter.org

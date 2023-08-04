@@ -1,21 +1,18 @@
-Bootstrap: yum
-OSVersion: 7
-MirrorURL: http://mirror.centos.org/centos-%{OSVERSION}/%{OSVERSION}/os/$basearch/
-Include: yum
+Bootstrap:docker
+From:hailgenetics/hail:0.2.120
 
 %labels
-  Maintainer OSC Gateways
+MAINTAINER Thomas Green
 
-%help
-This will run RStudio Server which must be mounted with dependencies into the container
-
-%apprun rserver
-  export PATH="$USER_PATH"
-  exec rserver "${@}"
+%environment
 
 %runscript
-  export PATH="$USER_PATH"
-  exec rserver "${@}"
+exec /bin/bash /bin/echo "Not supported"
 
 %post
-  yum install -y which
+mkdir /scratch
+mkdir /software
+mkdir /apps
+mkdir /app
+
+

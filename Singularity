@@ -15,4 +15,5 @@ mkdir /software
 mkdir /apps
 mkdir /app
 
+hail-pip-install jupyterlab
 
